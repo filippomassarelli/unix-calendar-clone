@@ -9,7 +9,7 @@ class Calendar
     month = @month.nil? ? Date.today.month : @month
     year = @year.nil? ? Date.today.year : @year
 
-    if @month > 12 && @year.nil?
+    if @year.nil? && !@month.nil? && @month > 12
       month, year = Date.today.month, @month
     end
 
