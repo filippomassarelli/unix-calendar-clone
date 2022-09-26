@@ -2,11 +2,13 @@ require_relative "./calendar"
 require "Date"
 
 banner = <<-BANNER
-Usage: ruby mars_rovers.rb "world" ["rover_data"]
+Usage: ruby cal.rb [month] [year]
 
-     ARG      |       DESCRIPTION       |     EXAMPLE
-   "world"    |   the size of the map   |      "4 8"
- "rover_data" | rover coords & commands |  "(2, 3, E) LFRFF"
+     ARG    |  OPTIONAL  |        DESCRIPTION        |   EXAMPLE
+    month   |    true    |  Desired calendar month   |     12
+     year   |    true    |   Desired calendar year   |    2022
+
+Without any arguments the calendar for the current month and year is printed
 
 -h, --help           Prints this message
 BANNER
